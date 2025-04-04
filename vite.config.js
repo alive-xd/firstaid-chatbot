@@ -1,5 +1,7 @@
-"dependencies": {
-  "vite": "^4.5.0",  // or latest version
-  "react": "^18.0.0",
-  "react-dom": "^18.0.0"
-}
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+});
